@@ -1,17 +1,7 @@
 <template>
   <div>
     <ContentHeader />
-    <CardContainer />
-    <div class="container" style="padding-top:5vh">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1><span class="badge badge-secondary">About</span></h1>
-          <div class="container">
-            To do.....
-          </div>
-          </div>
-        </div>
-      </div>
+      <AboutContainer />
       <JobContainer />
       <toolsContainer />
     </div>
@@ -20,6 +10,7 @@
 <script>
 import CardContainer from './cardContainer.vue'
 import ContentHeader from './contentHeader.vue'
+import AboutContainer from './aboutContainer.vue'
 import JobContainer from './jobContainer.vue'
 import ToolsContainer from './toolsContainer.vue'
 
@@ -32,7 +23,8 @@ export default {
     CardContainer,
     ContentHeader,
     JobContainer,
-    ToolsContainer
+    ToolsContainer,
+    AboutContainer
   }
 }
 </script>

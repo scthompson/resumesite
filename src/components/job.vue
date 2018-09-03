@@ -1,8 +1,8 @@
 <template>
-  <div class="card" v-on:click="jobClick">
+  <div class="card">
     <div class="card-body">
       <div class="jobTitle">
-        <strong>{{title}}</strong> at <span class="text-muted">{{company}}</span>
+        <strong>{{title}}</strong> at <a class="text-muted" :href="url">{{company}}</a>
       </div>
       <div class="jobBody">
         <slot></slot>
@@ -24,10 +24,7 @@ export default {
 
   },
   methods: {
-    jobClick: function(event) {
-      var win = window.open(this.url, "_blank");
-      win.focus();
-    }
+
   }
 }
 </script>
@@ -39,13 +36,6 @@ export default {
   }
   .card-header {
     text-align:center;
-  }
-  .card:hover .card-header {
-    background-color: rgba(0, 0, 0, 0.125);
-    color: #0073e6;
-  }
-  .card:hover .card-body {
-    background-color: rgba(0, 0, 0, 0.03)
   }
   .card {
     height:100%;

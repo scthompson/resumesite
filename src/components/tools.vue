@@ -1,13 +1,9 @@
 <template>
   <div class="col-sm-3">
-    <div class="card" v-on:click="jobClick">
+    <div class="card" :class="icontype">
       <div class="card-body">
-        <div class="jobTitle">
-          <strong>{{title}}</strong></span>
-        </div>
-        <div class="jobBody">
-          <slot></slot>
-        </div>
+        <i class="fa" :class="icon"></i>
+        <strong>{{title}}</strong>
       </div>
     </div>
   </div>
@@ -19,17 +15,23 @@ export default {
   name: 'tools',
   props: {
     title: String,
-    company: String,
-    url: String
+    icon: String
   },
   components: {
 
   },
-  methods: {
-    jobClick: function(event) {
-      var win = window.open(this.url, "_blank");
-      win.focus();
+  data: function() {
+    return {
+      icontype: "none"
     }
+  },
+  methods: {
+    changeBorder: function() {
+      this.$data.icontype = this.icon.split("-")[1];
+    }
+  },
+  beforeMount() {
+    this.changeBorder();
   }
 }
 </script>
@@ -46,19 +48,48 @@ export default {
     background-color: rgba(0, 0, 0, 0.125);
     color: #0073e6;
   }
-  .card:hover .card-body {
+  .card:hover {
     background-color: rgba(0, 0, 0, 0.03)
   }
   .card {
     height:100%;
     margin:5px;
   }
-  .jobTitle {
-    padding:1em;
-    border-bottom: 1px solid #0073e6;
+  .col-sm-3 {
+    padding-bottom:1%;
   }
-  .jobBody {
-    padding: 1.5em;
+  .card.code {
+    border-color: tomato;
+  }
+  .card.database {
+    border-color:orange;
+  }
+  .card.terminal{
+    border-color:rgb(0, 156, 0);
+  }
+  .card.file {
+    border-color:purple;
+  }
+  .card.toolbox {
+    border-color:dodgerblue;
+  }
+  .card-body i {
+    padding-right:5%;    
+  }
+  .card-body i.fa-code {
+    color:tomato;
+  }
+
+  .card-body i.fa-database {
+    color: orange;
+  }
+
+  .card-body i.fa-file {
+    color:purple;
+  }
+
+  .card-body i.fa-terminal {
+    color: rgb(0, 156, 0);
   }
 
 </style>
