@@ -11,9 +11,9 @@
       <a class="nav-link" href="#tools">Tools</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#" v-b-modal.modal1>Contact</a>
+        <a class="nav-link" href="#" v-b-modal.contactModal>Contact</a>
         <!-- Modal Component -->
-        <b-modal id="modal1" title="Contact Scott" hide-footer="true">
+        <b-modal id="contactModal" title="Contact Scott" :hide-footer=true>
           <a href="mailto:sct9107@gmail.com"><i class="fa fa-envelope"></i> sct9107@gmail.com</a>
           <a href="#"><i class="fa fa-linkedin"></i> linkedin.com/in/scottthompsonresume</a>
           <a href="#"><i class="fa fa-github"></i> github.com/scthompson</a>   
@@ -37,10 +37,10 @@ export default {
   .nav {
     background-color: #0073e6;
   }
-#modal1 a {
+#contactModal a {
   display:block;
 }
-#modal1 a i {
+#contactModal a i {
   font-size:large;
   padding-right:5%;
 }

@@ -4,7 +4,7 @@
         <div class="col-sm-12">
           <a name="experience">
             <div class="anchorPadding"></div>
-            <div><span class="badge badge-secondary">Experience</span></div>
+            <div><h3>Experience</h3></div>
           </a>
           <div class="container">
               <Job title="Software Engineer" company="ProObject" url="https://proobject.com">

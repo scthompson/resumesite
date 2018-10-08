@@ -1,9 +1,17 @@
 <template>
   <div class="col-sm-3">
-    <div class="card" :class="icontype">
+    <div class="card" :class="icontype" v-b-modal="modalName">
       <div class="card-body">
         <i class="fa" :class="icon"></i>
         <strong>{{title}}</strong>
+        <b-modal v-bind:id="modalName" :title="title" size="lg" :hide-footer=true>
+          <div class="col-sm-12">
+            Years Used: {{exp}}
+          </div>
+          <div class="col-sm-10">
+            <slot></slot>
+          </div>
+        </b-modal>
       </div>
     </div>
   </div>
@@ -15,7 +23,9 @@ export default {
   name: 'tools',
   props: {
     title: String,
-    icon: String
+    icon: String,
+    modalName: String,
+    exp: String
   },
   components: {
 
@@ -38,6 +48,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .col-sm-12 {
+    text-align: right;
+    color:darkgray;
+  }
+
   .title {
     font-size: 3em;
   }
@@ -49,7 +64,8 @@ export default {
     color: #0073e6;
   }
   .card:hover {
-    background-color: rgba(0, 0, 0, 0.03)
+    background-color: rgba(0, 0, 0, 0.03);
+    cursor:pointer;
   }
   .card {
     height:100%;
@@ -70,7 +86,7 @@ export default {
   .card.file {
     border-color:purple;
   }
-  .card.toolbox {
+  .card.briefcase {
     border-color:dodgerblue;
   }
   .card-body i {
@@ -82,6 +98,10 @@ export default {
 
   .card-body i.fa-database {
     color: orange;
+  }
+
+  .card-body i.fa-briefcase {
+    color: dodgerblue;
   }
 
   .card-body i.fa-file {
