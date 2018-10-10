@@ -8,16 +8,32 @@
           </a>
           <div class="container">
               <Job title="Software Engineer" company="ProObject" url="https://proobject.com">
-                I have been emplyed at ProObject since November 2017. I do things for this company and that helps them make money. Since I do those things, they pay me an amount of money. 
+                I have been employed at ProObject since November 2017. During my time with the company so far I have:
+                <ul>
+                  <li>Helped develop "Stack Overflow" like application for intranet at a government agency.</li>
+                  <li>Web developer of multiple front-facing WordPress websites, requiring updates on a regular basis. Write plugins for the websites in PHP and JavaScript. </li>
+                  <li>Iterim Team lead for interns. Use the Atlassian Suite to manage tasks and sprints (September 2017 - December 2017)</li>
+                  <li>Developed web endpoints using Django, and implement those into existing web forms that utilize HTML, CSS, JavaScript, and PHP in a WordPress environment. </li>
+                </ul>
               </Job>
               <Job title="Software Engineer Intern" company="Government Services Group" url="https://governmentservicesgroup.com">
-                Some texts
+               I was an intern at Government Services Group from January 2017 - May 2017. I worked on the following during my internship: 
+                <ul>
+                  <li>Developed web forms using PHP and jQuery</li>
+                  <li>Setup Jenkins Continuous Integration environment on a Mac server</li>
+                  <li>Created Android (Espresso) and web (Selenium) tests using Eclipse</li>
+                </ul>
               </Job>
               <Job title="Systems Engineer Intern" company="Prometric" url="https://prometric.com">
-                Some texts
+                I was an Systems Engineer Intern at Prometric between June 2016 - August 2016. My main tasts during the internship were
+                to ssisted with server maintenance and installation. To do this, I needed to maintain an organized list of what servers needed 
+                to be updated, and check to make sure that they were. I helped setup temporty testing centers, and configure the computers within them. 
               </Job>
               <Job title="Software Developer Intern" company="Prometric" url="https://prometric.com">
-                Some texts
+                I was a Software Developer Intern at Prometric between June 2015 - August 2015. My main task during the summer was to 
+                design and develop a data cube using an existing data warehouse, in order to create analytical charts for clients to see who was taking
+                their tests. This was a difficult task at first because I had never heard of a data cube and only had minimal SQL experience, but after 
+                researching I was able to understand and begin development. By the end of my internship the data cube was moved into quality control. 
               </Job>
           </div>
         </div>

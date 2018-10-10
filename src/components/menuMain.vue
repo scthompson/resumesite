@@ -8,6 +8,9 @@
       <a class="nav-link" href="#experience">Experience</a>
     </li>
     <li class="nav-item">
+      <a class="nav-link" href="#projects">Projects</a>
+    </li>
+    <li class="nav-item">
       <a class="nav-link" href="#tools">Tools</a>
     </li>
     <li class="nav-item">

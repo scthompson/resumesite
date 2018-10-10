@@ -8,8 +8,8 @@
           </a>
           <div class="container">
             <p>
-              Scott has about 2 years of experience as a Software Engineer. He has experience developing website and web applications using a variety of technologies. 
-              Scott has experience in tersting and integration, writing tests and setting up a continuous development enviornment. He has experience using the Agile Scrum 
+              I have about 2 years of experience as a Software Engineer. I am experienced in developing websites and web applications using a variety of technologies. 
+              I have experience in testing and integration, writing tests and setting up a continuous development enviornment. I have experience using the Agile Scrum 
               Methodology as a team lead and developer.
             </p>
             <span class="subTitle"><i class="fa fa-graduation-cap"></i> Education</span>
@@ -26,16 +26,14 @@
                 
               </div>
               <div class="card-body">
-                <p>Scott graduated from UMBC in <strong>May of 2017</strong> with a <strong>BS in Information Systems</strong>.</p>
+                <p>I graduated from UMBC in <strong>May of 2017</strong> with a <strong>BS in Information Systems</strong>.</p>
                 <p>
-                  Scott's favorite class during his college career was "Independent Research". In this class he collaborated with a research
-                  professor at UMBC as well as with a professor and student combo from another college. The research was to figure out if we 
-                  could determine malitous website visitors using <strong>data-mining (specifically clustering)</strong>. The preprocessing of data was done 
-                  with <strong>Python</strong> and the clustering was done with <strong>R</strong>. During the end of his time at UMBC, he presented his data at a school event. 
+                  My favorite class during his college career was "Independent Research". In this class I collaborated with a research
+                  professor at UMBC as well as with a professor and student combo from another college. To learn more <a href="#projects">click here</a>
                 </p>
                 <p>
-                  Scott was part of "UMBC Rockets and More", a club about doing fun things with science with a focus on Rockets. During his 3rd year he became president of the club. 
-                  He was in charge of the organizing club activities and outreach events, presenting and justifying the budget for funding and maintaining the budget. 
+                  I was part of "UMBC Rockets and More", a club about doing fun experiements with science with a focus on Rockets. During my 3rd year I became president of the club. 
+                  I was in charge of the organizing club activities and outreach events, presenting and justifying the budget for funding and maintaining the budget. 
                 </p>
               </div>
             </div>

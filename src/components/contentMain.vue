@@ -3,6 +3,7 @@
     <ContentHeader />
       <AboutContainer />
       <JobContainer />
+      <ProjectsContainer />
       <toolsContainer />
     </div>
 </template>
@@ -13,6 +14,7 @@ import ContentHeader from './contentHeader.vue'
 import AboutContainer from './aboutContainer.vue'
 import JobContainer from './jobContainer.vue'
 import ToolsContainer from './toolsContainer.vue'
+import ProjectsContainer from './projectsContainer.vue'
 
 export default {
   name: 'contentMain',
@@ -24,7 +26,8 @@ export default {
     ContentHeader,
     JobContainer,
     ToolsContainer,
-    AboutContainer
+    AboutContainer,
+    ProjectsContainer,
   }
 }
 </script>

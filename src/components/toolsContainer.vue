@@ -41,12 +41,11 @@ export default {
   },
   data () {
     return {
-      selected: 'alpha',
+      selected: 'exp',
       options: [
-        { value: null, text: 'Sort By:' },
-        { value: 'type', text: 'Type' },
         { value: 'alpha', text: 'Alphabetical' },
         { value: 'exp', text: 'Experience' },
+        { value: 'type', text: 'Type' },
       ],
       tools: [
         {title: 'Vue.js', exp: 0, icon: 'fa-code'},
