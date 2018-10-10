@@ -1,17 +1,10 @@
 <template>
   <div class="col-sm-3">
-    <div class="card" :class="icontype" v-b-modal="modalName">
+    <div class="card" :class="icontype">
       <div class="card-body">
         <i class="fa" :class="icon"></i>
         <strong>{{title}}</strong>
-        <b-modal v-bind:id="modalName" :title="title" size="lg" :hide-footer=true>
-          <div class="col-sm-12">
-            Years Used: {{exp}}
-          </div>
-          <div class="col-sm-10">
-            <slot></slot>
-          </div>
-        </b-modal>
+        <span class="weak">{{exp}} years</span>
       </div>
     </div>
   </div>
@@ -24,8 +17,7 @@ export default {
   props: {
     title: String,
     icon: String,
-    modalName: String,
-    exp: String
+    exp: Number
   },
   components: {
 
@@ -58,14 +50,6 @@ export default {
   }
   .card-header {
     text-align:center;
-  }
-  .card:hover .card-header {
-    background-color: rgba(0, 0, 0, 0.125);
-    color: #0073e6;
-  }
-  .card:hover {
-    background-color: rgba(0, 0, 0, 0.03);
-    cursor:pointer;
   }
   .card {
     height:100%;
@@ -110,6 +94,11 @@ export default {
 
   .card-body i.fa-terminal {
     color: rgb(0, 156, 0);
+  }
+  
+  .weak {
+    font-weight:lighter;
+    float:right;
   }
 
 </style>
