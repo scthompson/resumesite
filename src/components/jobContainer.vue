@@ -12,7 +12,7 @@
                 <ul>
                   <li>Helped develop "Stack Overflow" like application for intranet at a government agency.</li>
                   <li>Web developer of multiple front-facing WordPress websites, requiring updates on a regular basis. Write plugins for the websites in PHP and JavaScript. </li>
-                  <li>Iterim Team lead for interns. Use the Atlassian Suite to manage tasks and sprints (September 2017 - December 2017)</li>
+                  <li>Interim Team lead for interns. Use the Atlassian Suite to manage tasks and sprints (September 2017 - December 2017)</li>
                   <li>Developed web endpoints using Django, and implement those into existing web forms that utilize HTML, CSS, JavaScript, and PHP in a WordPress environment. </li>
                 </ul>
               </Job>

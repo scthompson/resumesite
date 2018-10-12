@@ -17,9 +17,14 @@
         <a class="nav-link" href="#" v-b-modal.contactModal>Contact</a>
         <!-- Modal Component -->
         <b-modal id="contactModal" title="Contact Scott" :hide-footer=true>
+          <div class="avatarWrapper">
+            <img id="avatarimg" src="@/assets/avatarimg.jpeg"/>
+          </div>
+          <hr/>
           <a href="mailto:sct9107@gmail.com"><i class="fa fa-envelope"></i> sct9107@gmail.com</a>
-          <a href="#"><i class="fa fa-linkedin"></i> linkedin.com/in/scottthompsonresume</a>
-          <a href="#"><i class="fa fa-github"></i> github.com/scthompson</a>   
+          <a target="_blank" href="https://www.linkedin.com/in/scottthompsonresume/">
+            <i class="fa fa-linkedin"></i> linkedin.com/in/scottthompsonresume
+          </a>   
         </b-modal>
     </li>
   </ul>
@@ -55,5 +60,15 @@ export default {
   }
   .nav-link {
     color: white;
+  }
+
+  .avatarWrapper {
+    text-align:center;
+
+  }
+
+  #avatarimg {
+    width:60%;
+    border-radius: 50%;
   }
 </style>
