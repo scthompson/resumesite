@@ -12,29 +12,19 @@
               I have experience in testing and integration, writing tests and setting up a continuous development enviornment. I have experience using the Agile Scrum 
               Methodology as a team lead and developer.
             </p>
-            <span class="subTitle"><i class="fa fa-graduation-cap"></i> Education</span>
-            <div class="card">
-              <div class="card-title">
+
                 <div class="row">
-                  <div class="col-md-1">
-                    <img src="@/assets/UMBClogo.png"/>
-                  </div>
-                  <div class="col-md-11">
-                    <strong class="cardTitleText">University of Maryland, Baltimore County</strong>
+                  <div class="col-md-12">
+                    <span><i class="fa fa-graduation-cap"></i></span>
+                    <strong class="cardTitleText"> University of Maryland, Baltimore County</strong>
                   </div>
                 </div>
                 
-              </div>
-              <div class="card-body">
-                <p>I graduated from UMBC in <strong>May of 2017</strong> with a <strong>BS in Information Systems</strong>.</p>
                 <p>
-                  My favorite class during his college career was "Independent Research". In this class I collaborated with a research
-                  professor at UMBC as well as with a professor and student combo from another college. To learn more <a href="#projects">click here</a>
+                  <img src="@/assets/UMBClogo.png"/>
+                  Graduated May 2017 with a BS in Information Systems.
                 </p>
-                <p>
-                  I was part of "UMBC Rockets and More", a club about doing fun experiements with science with a focus on Rockets. During my 3rd year I became president of the club. 
-                  I was in charge of the organizing club activities and outreach events, presenting and justifying the budget for funding and maintaining the budget. 
-                </p>
+                
               </div>
             </div>
           </div>

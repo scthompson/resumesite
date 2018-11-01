@@ -3,8 +3,8 @@
     <ContentHeader />
       <AboutContainer />
       <JobContainer />
-      <ProjectsContainer />
       <toolsContainer />
+      <ProjectsContainer />
     </div>
 </template>
 
