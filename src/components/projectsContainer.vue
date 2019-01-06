@@ -16,10 +16,10 @@
                   <strong>Docker</strong>, <strong>ReactJs</strong>, and <strong>ElasticSearch</strong>.
                 </p>
                 <p>
-                   The main portions of the site that I have worked on have been user notifications (email and insite) and 
-                   database migration scripts (from old schema to our new schema). During my time on this contract I have learned
-                   many new technologies that I did not know before, and have become our teams go-to person for that technology. 
-                   Some examples are ReactJS and ElasticSearch. 
+                  The main portions of the site that I have worked on have been user notifications (email and in site) and 
+                  database migration scripts (from the old schema to our new schema). During my time on this contract, I 
+                  have learned many new technologies that I did not know before, and have become our teams' go-to person 
+                  for that technology. Some examples are ReactJS and ElasticSearch. 
                 </p>
               </Project>
               <Project title="Independent Research at UMBC">
@@ -33,7 +33,7 @@
                   </ol>
                 </p>
                 <p>                  
-                  To answer the questions, I developed <strong>python</strong> program to convert a user's history 
+                  To answer the questions, I developed a <strong>python</strong> program to convert a user's history 
                   on a site to a matrix in <strong>Eclipse</strong>, as a pre-processing step. Then I ran the matrix through 
                   an <strong>R</strong> program, that I helped develop and improve to cluster and graph a matrix of 
                   large data using <strong>RStudio</strong>.
@@ -46,6 +46,7 @@
               <Project title="Resume Website">
                 <p>
                   I built a resume website to begin learning <strong>Vue.js</strong> and <strong>Bootstrap 4</strong>. 
+                  You're looking at it right now!
                 </p>
               </Project>
             </div>

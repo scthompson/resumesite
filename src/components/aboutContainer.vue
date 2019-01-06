@@ -8,9 +8,10 @@
           </a>
           <div class="container">
             <p>
-              I have about 2 years of experience as a Software Engineer. I am experienced in developing websites and web applications using a variety of technologies. 
-              I have experience in testing and integration, writing tests and setting up a continuous development enviornment. I have experience using the Agile Scrum 
-              Methodology as a team lead and developer.
+              I have been a Software Engineer for about two years. I am experienced in developing 
+              and testing web applications using a variety of <a href="#tools">technologies</a>. 
+              I enjoy learning new technologies and expanding my knowledge on technologies I know. 
+              I also enjoy solving challenging problems and improving my programming knowledge.
             </p>
 
                 <div class="row">
