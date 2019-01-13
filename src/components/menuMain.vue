@@ -4,15 +4,15 @@
 
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-    <b-navbar-brand href="#">Scott Thompson</b-navbar-brand>
+    <b-navbar-brand href="#" v-scroll-to="'#home'">Scott Thompson</b-navbar-brand>
 
     <b-collapse is-nav id="nav_collapse">
 
       <b-navbar-nav>
-        <b-nav-item href="#about">About</b-nav-item>
-        <b-nav-item href="#experience">Experience</b-nav-item>
-        <b-nav-item href="#tools">Tools</b-nav-item>
-        <b-nav-item href="#projects">Projects</b-nav-item>
+        <b-nav-item href="#" v-scroll-to="'#about'">About</b-nav-item>
+        <b-nav-item href="#" v-scroll-to="'#experience'">Experience</b-nav-item>
+        <b-nav-item href="#" v-scroll-to="'#tools'">Tools</b-nav-item>
+        <b-nav-item href="#" v-scroll-to="'#projects'">Projects</b-nav-item>
         <b-nav-item v-b-modal.contactModal>Contact</b-nav-item>
       </b-navbar-nav>
     </b-collapse>

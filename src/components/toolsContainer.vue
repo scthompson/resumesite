@@ -2,10 +2,8 @@
   <div class="container">
     <div class="row">
         <div class="col-sm-12">
-          <a name="tools">
-            <div class="anchorPadding"></div>
-            <div><h3>Tools</h3></div>
-          </a>
+          <div id="tools" class="anchorPadding"></div>
+          <div><h3>Tools</h3></div>
         </div>
         <div class="col-sm-6">
           <b-form-select v-model="selected" :options="options" class="mb-3">
@@ -40,43 +38,43 @@ export default {
     Tools
   },
   data () {
+    var currentYear = new Date().getFullYear();
     return {
       selected: 'exp',
       options: [
         { value: 'alpha', text: 'Alphabetical' },
-        { value: 'exp', text: 'Experience' },
+        { value: 'exp', text: 'Confidence' },
         { value: 'type', text: 'Type' },
       ],
       tools: [
-        {title: 'Vue.js', exp: 0, icon: 'fa-code'},
-        {title: 'MySql', exp: 6, icon: 'fa-database'},
-        {title: 'VS Code', exp: 1, icon: 'fa-file'},
+        {title: 'Vue.js', exp: 3, icon: 'fa-code'},
+        {title: 'MySql', exp: 4, icon: 'fa-database'},
+        {title: 'VS Code', exp: 3, icon: 'fa-file'},
         {title: 'Vim', exp: 3, icon: 'fa-file'},
-        {title: 'Android Studio', exp: 2, icon: 'fa-file'},
+        {title: 'Android Studio', exp: 3, icon: 'fa-file'},
         {title: 'RStudio', exp: 3, icon: 'fa-file'},
         {title: 'Linux CLI', exp: 3, icon: 'fa-terminal'},
         {title: 'Windows CLI', exp: 2, icon: 'fa-terminal'},
-        {title: 'JavaScript', exp: 6, icon: 'fa-code'},
-        {title: 'jQuery', exp: 5, icon: 'fa-code'},
-        {title: 'AngularJs 2', exp: 0, icon: 'fa-code'},
-        {title: 'ReactJs', exp: 1, icon: 'fa-code'},
+        {title: 'JavaScript', exp: 4, icon: 'fa-code'},
+        {title: 'jQuery', exp: 4, icon: 'fa-code'},
+        {title: 'ReactJs', exp: 3, icon: 'fa-code'},
         {title: 'PHP', exp: 5, icon: 'fa-code'},
-        {title: 'CakePHP', exp: 1, icon: 'fa-code'},
+        {title: 'CakePHP', exp: 4, icon: 'fa-code'},
         {title: 'Python', exp: 3, icon: 'fa-code'},
-        {title: 'R', exp: 2, icon: 'fa-code'},
+        {title: 'R', exp: 3, icon: 'fa-code'},
         {title: 'Java', exp: 2, icon: 'fa-code'},
         {title: 'C++', exp: 1, icon: 'fa-code'},
         {title: 'Bash', exp: 3, icon: 'fa-terminal'},
-        {title: 'HTML5', exp: 6, icon: 'fa-code'},
-        {title: 'CSS3', exp: 6, icon: 'fa-code'},
+        {title: 'HTML5', exp: 5, icon: 'fa-code'},
+        {title: 'CSS3', exp: 5, icon: 'fa-code'},
         {title: 'Boostrap', exp: 3, icon: 'fa-briefcase'},
-        {title: 'Jenkins', exp: 1, icon: 'fa-briefcase'},
-        {title: 'Django', exp: 1, icon: 'fa-briefcase'},
-        {title: 'WordPress', exp: 2, icon: 'fa-briefcase'},
-        {title: 'Selenium', exp: 1, icon: 'fa-briefcase'},
-        {title: 'Atlassian Suite', exp: 2, icon: 'fa-briefcase'},
-        {title: 'Git', exp: 3, icon: 'fa-briefcase'},
-        {title: 'Docker', exp: 0, icon: 'fa-briefcase'},
+        {title: 'Jenkins', exp: 2, icon: 'fa-briefcase'},
+        {title: 'Django', exp: 2, icon: 'fa-briefcase'},
+        {title: 'WordPress', exp: 3, icon: 'fa-briefcase'},
+        {title: 'Selenium', exp: 2, icon: 'fa-briefcase'},
+        {title: 'Atlassian Suite', exp: 4, icon: 'fa-briefcase'},
+        {title: 'Git', exp: 4, icon: 'fa-briefcase'},
+        {title: 'Docker', exp: 1, icon: 'fa-briefcase'},
       ]
     }
   },

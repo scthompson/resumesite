@@ -2,10 +2,8 @@
     <div class="container" style="padding-top:5vh">
       <div class="row">
         <div class="col-sm-12">
-          <a name="projects">
-            <div class="anchorPadding"></div>
-            <div><h3>Projects</h3></div>
-          </a>
+          <div id="projects" class="anchorPadding"></div>
+          <div><h3>Projects</h3></div>
           <div class="container">
             <div class="row">
               <Project title="Stack Overflow like Application">
@@ -47,6 +45,15 @@
                 <p>
                   I built a resume website to begin learning <strong>Vue.js</strong> and <strong>Bootstrap 4</strong>. 
                   You're looking at it right now!
+                </p>
+              </Project>
+              <Project title="Android JavaScript Injection">
+                <p>
+                  The goal of this project was to determine if we could run web applications as if they were an <strong>Android</strong> app, without the user knowing any different. 
+                  This meant that we needed to be able to save user information and create custom <strong>Android</strong> functions (So that we would be able to use Bluetooth, or location services). 
+                  To achieve these requirements, I figured out a way to inject <strong>JavaScript</strong> onto any web page from <strong>Android</strong>, that would allow us to store text-box information, and call other JavaScript or 
+                  <strong>Android</strong> functions. For example, we were able to use a the <strong>JavaScript</strong> to store username's and password's in the internal <strong>Android</strong> database. Then, the next time a user launched 
+                  the app, we would insert their username and password and click the login button for them.
                 </p>
               </Project>
             </div>

@@ -1,10 +1,14 @@
 <template>
-  <div class="col-sm-3">
+  <div class="col-sm-4">
     <div class="card" :class="icontype">
       <div class="card-body">
-        <i class="fa" :class="icon"></i>
-        <strong>{{title}}</strong>
-        <span class="weak">{{exp}} years</span>
+        <div>
+          <i class="fa" :class="icon"></i>
+          <strong>{{title}}</strong>
+        </div>
+        <div class="starContainer" v-b-tooltip.html.bottom :title="expText">
+          <i style="padding-right: 0" :class="star + ' fa-star'" v-for="star in stars"></i>
+        </div>
       </div>
     </div>
   </div>
@@ -23,8 +27,29 @@ export default {
 
   },
   data: function() {
+    var stars = [];
+    while(stars.length != 5) {
+      if (this.exp - stars.length > 0) {
+        stars.push('fa');
+      } else {
+        stars.push('far');
+      }
+    }
+    var expText = 'I am confident with this tool';
+    if (this.exp == 1) {
+      expText = 'I have not used this tool enough to become confident with it';
+    } else if (this.exp == 2) {
+      expText = 'I am a little confident with this tool';
+    } else if (this.exp == 3) {
+      expText = 'I am moderately confident with this tool';
+    } else if (this.exp) {
+      expText = 'I am fairly confident with this tool'
+    }
     return {
-      icontype: "none"
+      icontype: "none",
+      stars: stars,
+      expText: expText
+
     }
   },
   methods: {
@@ -55,7 +80,7 @@ export default {
     height:100%;
     margin:5px;
   }
-  .col-sm-3 {
+  .col-sm-3, .col-sm-4 {
     padding-bottom:1%;
   }
   .card.code {
@@ -98,7 +123,11 @@ export default {
   
   .weak {
     font-weight:lighter;
-    float:right;
+  }
+
+  .starContainer {
+    height:fit-content;
+    width:fit-content;
   }
 
 </style>

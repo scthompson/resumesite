@@ -2,10 +2,8 @@
     <div class="container" style="padding-top:5vh">
       <div class="row">
         <div class="col-sm-12">
-          <a name="experience">
-            <div class="anchorPadding"></div>
-            <div><h3>Experience</h3></div>
-          </a>
+          <div id="experience" class="anchorPadding"></div>
+          <div><h3>Experience</h3></div>
           <div class="container">
               <Job title="Software Engineer" company="ProObject" url="https://proobject.com">
                 I have been employed at ProObject since November 2017. During my time with the company so far I have:

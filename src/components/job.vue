@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card-body">
       <div class="jobTitle">
-        <strong>{{title}}</strong> at <a class="text-muted" :href="url">{{company}}</a>
+        <strong>{{title}}</strong> at <a class="text-muted" :href="url" target="_blank">{{company}}</a>
       </div>
       <div class="jobBody">
         <slot></slot>

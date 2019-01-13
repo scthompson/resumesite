@@ -2,14 +2,12 @@
     <div class="container" style="padding-top:5vh">
       <div class="row">
         <div class="col-sm-12">
-          <a name="about">
-            <div class="anchorPadding"></div>
-            <div><h3>About</h3></div>
-          </a>
+          <div id="about" class="anchorPadding"></div>
+          <div><h3>About</h3></div>
           <div class="container">
             <p>
               I have been a Software Engineer for about two years. I am experienced in developing 
-              and testing web applications using a variety of <a href="#tools">technologies</a>. 
+              and testing web applications using a variety of <a href="#" v-scroll-to="'#tools'">technologies</a>. 
               I enjoy learning new technologies and expanding my knowledge on technologies I know. 
               I also enjoy solving challenging problems and improving my programming knowledge.
             </p>
@@ -22,7 +20,7 @@
                 </div>
                 
                 <p>
-                  <img src="@/assets/UMBClogo.png"/>
+                  <a href="https://umbc.edu" alt="UMBC website" target="_blank"><img src="@/assets/UMBClogo.png"/></a>
                   Graduated May 2017 with a BS in Information Systems.
                 </p>
                 
