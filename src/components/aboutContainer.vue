@@ -6,10 +6,10 @@
           <div><h3>About</h3></div>
           <div class="container">
             <p>
-              I have been a Software Engineer for about two years. I am experienced in developing 
-              and testing web applications using a variety of <a href="#" v-scroll-to="'#tools'">technologies</a>. 
-              I enjoy learning new technologies and expanding my knowledge on technologies I know. 
-              I also enjoy solving challenging problems and improving my programming knowledge.
+              I have been a full time Software Engineer for about three years. I am experienced in developing 
+              and testing web applications using a variety of <a href="#" v-scroll-to="'#tools'">tools</a>. 
+              I always try and strive to advance my knowledge of technologies and coding. I also enjoy solving 
+              challenging problems and improving my programming knowledge.
             </p>
 
                 <div class="row">

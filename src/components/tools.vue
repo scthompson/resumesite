@@ -42,7 +42,7 @@ export default {
       expText = 'I am a little confident with this tool';
     } else if (this.exp == 3) {
       expText = 'I am moderately confident with this tool';
-    } else if (this.exp) {
+    } else if (this.exp == 4) {
       expText = 'I am fairly confident with this tool'
     }
     return {

@@ -25,7 +25,7 @@
         <hr/>
         <a href="mailto:sct9107@gmail.com"><i class="fa fa-envelope"></i> sct9107@gmail.com</a>
         <a target="_blank" href="https://www.linkedin.com/in/scottthompsonresume/">
-          <i class="fa fa-linkedin"></i> linkedin.com/in/scottthompsonresume
+          <i class="fab fa-linkedin"></i> linkedin.com/in/scottthompsonresume
         </a>   
       </b-modal>
 </div>
