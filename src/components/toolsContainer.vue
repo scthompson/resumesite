@@ -76,6 +76,7 @@ export default {
         {title: 'Git', exp: 4, icon: 'fa-briefcase'},
         {title: 'Docker', exp: 1, icon: 'fa-briefcase'},
         {title: 'ElasticSearch', exp: 2, icon: 'fa-briefcase'},
+        {title: 'NodeJs', exp: 1, icon: 'fa-code'}
       ]
     }
   },

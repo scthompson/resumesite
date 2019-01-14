@@ -1,5 +1,10 @@
 <template>
-  <div>  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <button class="btn btn-primary" v-b-modal.contactModal>Contact Me</button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -20,6 +25,14 @@ export default {
   div {
     height:200px;
     width:100%;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .btn {
+    margin-top:75px;
   }
 
 </style>

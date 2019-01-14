@@ -1,5 +1,5 @@
 <template>
-    <div class="container" style="padding-top:5vh">
+    <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <div id="about" class="anchorPadding"></div>
@@ -20,7 +20,7 @@
                 </div>
                 
                 <p>
-                  <a href="https://umbc.edu" alt="UMBC website" target="_blank"><img src="@/assets/UMBClogo.png"/></a>
+                  <img src="@/assets/UMBClogo.png"/>
                   Graduated May 2017 with a BS in Information Systems.
                 </p>
                 

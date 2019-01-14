@@ -1,12 +1,12 @@
 <template>
-    <div class="container" style="padding-top:5vh">
+    <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <div id="projects" class="anchorPadding"></div>
           <div><h3>Projects</h3></div>
           <div class="container">
             <div class="row">
-              <Project title="Stack Overflow like Application">
+              <Project title="Stack Overflow-like Application">
                 <p>
                   I have been on a contract for the last year, where we are rewriting a popular question/answer application on an intranet
                   , to a new framework. The technologies that are being used are 
@@ -16,7 +16,7 @@
                 <p>
                   The main portions of the site that I have worked on have been user notifications (email and in-site), 
                   database migration scripts (from the old schema to our new schema), and visually displaying metrics. During my time on this contract, I 
-                  have learned many new technologies that I did not previously known. For some of these technologies I have become our teams' go-to person 
+                  have learned many new technologies that I had not previously known. For some of these technologies I have become our teams' go-to person 
                   for that technology. Some examples are <strong>ReactJs</strong> and <strong>ElasticSearch</strong>.
                 </p>
               </Project>
@@ -26,15 +26,15 @@
                   Mining and Clustering". The questions that we wanted to answer were:
                   <ol>
                     <li>Which features effectively identify malicious behavior?</li>
-                    <li>What are teh best input parameters to cluster on (# of clusters to generate, distance metric)</li>
-                    <li>What cost? (Pre-processing, clustering, analysis of which are malicious?) dependent on the features?</li>
+                    <li>What are the best input parameters to cluster on (Number of clusters to generate, distance metric)</li>
+                    <li>What is the cost of pre-preprocessing, clustering and analyzing the data?</li>
                   </ol>
                 </p>
                 <p>                  
                   To answer the questions, we decided to use a data mining technique called clustering. Before I could get to that 
                   step, I first had to pre-process our user logs. To do this, I developed a <strong>python</strong> program to convert
                   the logs to a matrix. I wrote the script using the <strong>Eclipse</strong> IDE. I then took that matrix and ran it through 
-                  an <strong>R</strong> program, that I helped develop and improve, to preform the clustering. Once the data was clustered, the 
+                  an <strong>R</strong> program, that I helped develop and improve, to perform the clustering. Once the data was clustered, the 
                   program would also output a color-coded graph of the results. This program was written while using <strong>RStudio</strong>.
                 </p>
                 <p>
