@@ -44,6 +44,7 @@ export default {
   .jobTitle {
     padding:1em;
     border-bottom: 1px solid #0073e6;
+    font-size: large;
   }
   .jobBody {
     padding: 1.5em;

@@ -5,6 +5,9 @@
           <div id="tools" class="anchorPadding"></div>
           <div><h3>Tools</h3></div>
         </div>
+        <div class="col-sm-1">
+          <label>Sort By:</label>
+        </div>
         <div class="col-sm-6">
           <b-form-select v-model="selected" :options="options" class="mb-3">
           </b-form-select>
@@ -47,36 +50,34 @@ export default {
         { value: 'type', text: 'Type' },
       ],
       tools: [
-        {title: 'Vue.js', exp: 3, icon: 'fa-code'},
-        {title: 'MySql', exp: 4, icon: 'fa-database'},
-        {title: 'VS Code', exp: 3, icon: 'fa-file'},
-        {title: 'Vim', exp: 3, icon: 'fa-file'},
-        {title: 'Android Studio', exp: 3, icon: 'fa-file'},
-        {title: 'RStudio', exp: 3, icon: 'fa-file'},
-        {title: 'Linux CLI', exp: 3, icon: 'fa-terminal'},
-        {title: 'Windows CLI', exp: 2, icon: 'fa-terminal'},
-        {title: 'JavaScript', exp: 4, icon: 'fa-code'},
-        {title: 'jQuery', exp: 4, icon: 'fa-code'},
-        {title: 'ReactJs', exp: 3, icon: 'fa-code'},
-        {title: 'PHP', exp: 5, icon: 'fa-code'},
-        {title: 'CakePHP', exp: 4, icon: 'fa-code'},
-        {title: 'Python', exp: 3, icon: 'fa-code'},
-        {title: 'R', exp: 3, icon: 'fa-code'},
-        {title: 'Java', exp: 2, icon: 'fa-code'},
-        {title: 'C++', exp: 1, icon: 'fa-code'},
-        {title: 'Bash', exp: 3, icon: 'fa-terminal'},
-        {title: 'HTML5', exp: 5, icon: 'fa-code'},
-        {title: 'CSS3', exp: 5, icon: 'fa-code'},
-        {title: 'Boostrap', exp: 3, icon: 'fa-briefcase'},
-        {title: 'Jenkins', exp: 2, icon: 'fa-briefcase'},
-        {title: 'Django', exp: 2, icon: 'fa-briefcase'},
-        {title: 'WordPress', exp: 3, icon: 'fa-briefcase'},
-        {title: 'Selenium', exp: 2, icon: 'fa-briefcase'},
-        {title: 'Atlassian Suite', exp: 4, icon: 'fa-briefcase'},
-        {title: 'Git', exp: 4, icon: 'fa-briefcase'},
-        {title: 'Docker', exp: 1, icon: 'fa-briefcase'},
-        {title: 'ElasticSearch', exp: 2, icon: 'fa-briefcase'},
-        {title: 'NodeJs', exp: 1, icon: 'fa-code'}
+        {title: 'Vue.js', exp: 4, icon: 'fa-cubes', priority: 2},
+        {title: 'MySql', exp: 4.5, icon: 'fa-database', priority: 5},
+        {title: 'VS Code', exp: 3, icon: 'fa-file', priority: 8},
+        {title: 'Vim', exp: 3, icon: 'fa-file', priority: 9},
+        {title: 'Android Studio', exp: 3, icon: 'fa-file', priority: 16},
+        {title: 'RStudio', exp: 3, icon: 'fa-file', priority: 17},
+        {title: 'Bash', exp: 3, icon: 'fa-terminal', priority: 8},
+        {title: 'Windows Command Prompt', exp: 3, icon: 'fa-terminal', priority: 9},
+        {title: 'JavaScript', exp: 4.5, icon: 'fa-code', priority: 5},
+        {title: 'jQuery', exp: 4.5, icon: 'fa-cubes', priority: 4},
+        {title: 'ReactJs', exp: 4, icon: 'fa-cubes', priority: 1},
+        {title: 'PHP', exp: 4.5, icon: 'fa-code', priority: 6},
+        {title: 'CakePHP', exp: 4.5, icon: 'fa-cubes', priority: 7},
+        {title: 'Python', exp: 3.5, icon: 'fa-code', priority: 13},
+        {title: 'R', exp: 3.5, icon: 'fa-code', priority: 14},
+        {title: 'Java', exp: 3, icon: 'fa-code', priority: 15},
+        {title: 'HTML5', exp: 4.5, icon: 'fa-code', priority: 18},
+        {title: 'CSS3', exp: 4.5, icon: 'fa-code', priority: 19},
+        {title: 'Boostrap', exp: 4, icon: 'fa-briefcase', priority: 20},
+        {title: 'Jenkins', exp: 3, icon: 'fa-briefcase', priority: 15},
+        {title: 'Django', exp: 3, icon: 'fa-briefcase', priority: 16},
+        {title: 'WordPress', exp: 4, icon: 'fa-briefcase', priority: 17},
+        {title: 'Selenium', exp: 3, icon: 'fa-briefcase', priority: 18},
+        {title: 'Atlassian Suite', exp: 4, icon: 'fa-briefcase', priority: 21},
+        {title: 'Git', exp: 4, icon: 'fa-briefcase', priority: 10},
+        {title: 'Docker', exp: 3, icon: 'fa-briefcase', priority: 11},
+        {title: 'ElasticSearch', exp: 3, icon: 'fa-briefcase', priority: 12},
+        {title: 'Node.js', exp: 3.5, icon: 'fa-cubes', priority: 3}
       ]
     }
   },
@@ -85,7 +86,7 @@ export default {
       if (this.selected == 'alpha') {
         return _.orderBy(this.tools, 'title');
       } else if (this.selected == 'exp') {
-        return _.reverse(_.orderBy(this.tools, 'exp'));
+        return _.orderBy(this.tools, ['exp', 'priority'], ['desc', 'asc']);
       } else if (this.selected == 'type') {
         return _.orderBy(this.tools, 'icon');
       }

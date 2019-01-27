@@ -8,18 +8,22 @@
               <Job title="Software Engineer" company="ProObject" url="https://proobject.com">
                 I have been employed at ProObject since June 2017. During my time with the company so far I have:
                 <ul>
-                  <li>Helped develop Stack Overflow-like application for intranet at a government agency.</li>
-                  <li>Web developer of multiple front-facing WordPress websites, requiring updates on a regular basis. Write plugins for the websites in PHP and JavaScript. </li>
+                  <li>Creating a question-answer web application on an intranet for a government agancy using CakePHP, JavaScript, React.js, and MySql
+                    Read more about this <a href="#" v-scroll-to="'#projects'">here</a>.
+                  </li>
+                  <li>Administering multiple production WordPress websites, requiring updating on a regular basis.</li>
+                  <li>Created an Android app that loads a web page and injects JavaScript to add functionality and interation with the Android system. 
+                    Read more about this <a href="#" v-scroll-to="'#projects'">here</a>.
+                  </li>
                   <li>Interim Team lead for interns. Use the Atlassian Suite to manage tasks and sprints (September 2017 - December 2017)</li>
-                  <li>Developed web endpoints using Django, and implemented those into existing web forms that utilize HTML, CSS, JavaScript, and PHP in a WordPress environment. </li>
                 </ul>
               </Job>
-              <Job title="Software Engineer Intern" company="Government Services Group" url="http://governmentservicesgroup.com/">
-               I was an intern at Government Services Group from January 2017 - May 2017. I worked on the following during my internship: 
+              <Job title="Software Engineer Intern" company="ProObject" url="https://proobject.com/">
+               I was an intern at ProObject from January 2017 - May 2017. I worked on the following during my internship: 
                 <ul>
-                  <li>Developed web forms using PHP and jQuery</li>
-                  <li>Setup Jenkins Continuous Integration environment on a Mac server</li>
-                  <li>Created Android (Espresso) and web (Selenium) tests using Eclipse</li>
+                  <li>Developed web forms for upgrading accounts to VIP status using PHP, JQuery, and Django</li>
+                  <li>Setup Jenkins Continuous Integration</li>
+                  <li>Created Android (Espresso) and web (Selenium) tests</li>
                 </ul>
               </Job>
               <Job title="Systems Engineer Intern" company="Prometric" url="https://prometric.com">

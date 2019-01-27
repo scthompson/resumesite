@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <button class="btn btn-primary" v-b-modal.contactModal>Contact Me</button>
+        <button class="btn btn-primary btn-lg" v-b-modal.contactModal>Contact Me</button>
       </div>
     </div>
   </div>

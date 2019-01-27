@@ -43,7 +43,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .mainNav {
-    background-color: #0073e6;
+    background-color: #0088ff;
   }
 #contactModal a {
   display:block;
@@ -58,7 +58,7 @@ export default {
     width:100%;
     z-index:999;
   }
-  .nav-link {
+  .navbar-dark .navbar-nav .nav-link {
     color: white;
   }
 

@@ -8,7 +8,7 @@
             <p>
               I have been a full time Software Engineer for about three years. I am experienced in developing 
               and testing web applications using a variety of <a href="#" v-scroll-to="'#tools'">tools</a>. 
-              I always try and strive to advance my knowledge of technologies and coding. I also enjoy solving 
+              I strive to advance my knowledge of technologies and coding. I also enjoy solving 
               challenging problems and improving my programming knowledge.
             </p>
 
@@ -17,16 +17,14 @@
                     <span><i class="fa fa-graduation-cap"></i></span>
                     <strong class="cardTitleText"> University of Maryland, Baltimore County</strong>
                   </div>
-                </div>
-                
-                <p>
-                  <img src="@/assets/UMBClogo.png"/>
-                  Graduated May 2017 with a BS in Information Systems.
-                </p>
-                
+                  <div class="col-md-6 pt-3 ml-3">
+                    <p>
+                      <img src="@/assets/UMBClogo.png"/>
+                      Graduated May 2017 with a BS in Information Systems.
+                    </p>
+                </div>                
               </div>
             </div>
-          </div>
           </div>
         </div>
       </div>

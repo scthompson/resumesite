@@ -7,7 +7,7 @@
           <strong>{{title}}</strong>
         </div>
         <div class="starContainer" v-b-tooltip.html.bottom :title="expText">
-          <i style="padding-right: 0" :class="star + ' fa-star'" v-for="star in stars"></i>
+          <i style="padding-right: 0" :class="star.class" v-for="star in stars" v-bind:key="star.id"></i>
         </div>
       </div>
     </div>
@@ -28,28 +28,28 @@ export default {
   },
   data: function() {
     var stars = [];
+    var exper = this.exp;
     while(stars.length != 5) {
-      if (this.exp - stars.length > 0) {
-        stars.push('fa');
+      var starId = stars.length;
+      if (exper >= 1) {
+        stars.push({id: starId, class: 'fa fa-star'});
+      } else if (exper > 0) {
+        stars.push({id: starId, class: 'fas fa-star-half-alt'});
       } else {
-        stars.push('far');
+        stars.push({id: starId, class: 'far fa-star'});
       }
+      exper--;
     }
     var expText = 'I am confident with this tool';
-    if (this.exp == 1) {
-      expText = 'I have not used this tool enough to become confident with it';
-    } else if (this.exp == 2) {
-      expText = 'I am a little confident with this tool';
-    } else if (this.exp == 3) {
+    if (this.exp < 4) {
       expText = 'I am moderately confident with this tool';
-    } else if (this.exp == 4) {
+    } else if (this.exp < 5) {
       expText = 'I am fairly confident with this tool'
     }
     return {
       icontype: "none",
       stars: stars,
       expText: expText
-
     }
   },
   methods: {
@@ -84,13 +84,13 @@ export default {
     padding-bottom:1%;
   }
   .card.code {
-    border-color: tomato;
+    border-color: #ff4f4d;
   }
   .card.database {
-    border-color:orange;
+    border-color: black;
   }
   .card.terminal{
-    border-color:rgb(0, 156, 0);
+    border-color:limegreen;
   }
   .card.file {
     border-color:purple;
@@ -98,15 +98,19 @@ export default {
   .card.briefcase {
     border-color:dodgerblue;
   }
+  .card.cubes {
+    border-color: orange;
+  }
+
   .card-body i {
     padding-right:5%;    
   }
   .card-body i.fa-code {
-    color:tomato;
+    color:#ff4f4d;
   }
 
   .card-body i.fa-database {
-    color: orange;
+    color: black;
   }
 
   .card-body i.fa-briefcase {
@@ -118,7 +122,11 @@ export default {
   }
 
   .card-body i.fa-terminal {
-    color: rgb(0, 156, 0);
+    color: limegreen;
+  }
+
+  .card-body i.fa-cubes {
+    color: orange;
   }
   
   .weak {
